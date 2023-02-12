@@ -25,27 +25,5 @@ public class Circle extends JComponent implements Figure {
     @Override
     public void drawComponent(Graphics g, int pos_x, int pos_y, int dim_x, int dim_y) {
 
-        this.pos_x = pos_x;
-        this.pos_y = pos_y;
-        this.dim_x = dim_x;
-        this.dim_y = dim_y;
-
-        paintComponent(g);
-    }
-
-    @Override
-    public void drawComponent(Graphics g, int pos_x, int pos_y, int dim_x, int dim_y, Color color) {
-
-        this.pos_x = pos_x;
-        this.pos_y = pos_y;
-        this.dim_x = dim_x;
-        this.dim_y = dim_y;
-
-        Color previousColor = g.getColor();
-        g.setColor(color);
-
-        paintComponent(g);
-
-        g.setColor(previousColor);
     }
 }

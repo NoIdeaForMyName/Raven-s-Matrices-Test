@@ -7,7 +7,7 @@ import Figures.Triangle;
 
 import java.util.Random;
 
-public class Test1 {
+public class Test_1 {
 
     private Figure figure_a = null;
     private Figure figure_b = null;
@@ -15,7 +15,7 @@ public class Test1 {
     private int amount_a;
     private int amount_b;
 
-    public Test1() {
+    public Test_1() {
 
         Random random = new Random();
         switch (random.nextInt(0, 3)) {
@@ -43,6 +43,11 @@ public class Test1 {
         amount_a = random.nextInt(0, 2)*2 + 1;
         amount_b = random.nextInt(3, 5)*2;
 
+    }
+
+    public void nextPic() {
+        amount_a++;
+        amount_b--;
     }
 
     public Figure getFigure_a() {
